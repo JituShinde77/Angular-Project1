@@ -19,6 +19,8 @@ import { ENV_PROVIDERS } from './environment';
 import { LoginModule } from './login';
 import { NoContentComponent } from './no-content';
 import { RegisterComponent, RegisterRoutingModule } from './register';
+//import { UserModule } from './user';
+
 import { ROUTES } from './app.routes';
 import { SHARED_APP_DIRECTIVES } from './shared/directives';
 import { SHARED_APP_SERVICES } from './shared/services';
@@ -55,9 +57,10 @@ type StoreType = {
     FormsModule,
     HttpModule,
     LoginModule,
+    //UserModule,
     ReactiveFormsModule,
     RegisterRoutingModule,
-    RouterModule.forRoot(ROUTES, { useHash: true })
+    RouterModule.forRoot(ROUTES, { useHash: false })
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     APP_PROVIDERS,

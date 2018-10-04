@@ -3,3 +3,5 @@
 /nbproject/private/
 /.settings
 /.project
+/package-lock.json
+npm-debug.log
